@@ -1,0 +1,113 @@
+JOB 1
+
+ls affiche le manuel de commande 
+defaults write com.apple.finder affiche les fichier cachés 
+killall Finder affiche Finder 
+ls -la affiche les fichier en liste 
+
+Comment ajouter des options à une commande ?
+
+On peut ajouter des options à une commande avec le tiret du 6 ( -), ls -l 
+par exemple pour afficher la taille, la date et l’heure de modification, 
+le nom du fichier ou du répertoire, le propriétaire du fichier et son 
+autorisation. 
+
+Quelles sont les deux syntaxes principales d’écriture des options pour une
+commande ?
+
+Les lettres tapées après un tiret (tiret du 6, c'est-à- dire - ), et les 
+mots tapés après 2 tirets, sont des options. Le reste constitue les 
+paramètres. Mais il existe des commandes sans paramètres, d'autres sans 
+options, et même certaines qui prennent une commande en paramètre.
+
+
+JOB 2
+
+echo $SHELL
+nano .zshrc pour créer le fichier 
+ls -a pour afficher fichier caché 
+et less .nom du fichier pour afficher le contenue 
+
+affiche les 10 premieres lignes head .zshrc
+afficher les 20 premieres ligne head -20 .zshrc
+
+ JOB 3 
+
+homebrew gère les pâquet sur mac (je l’ai installer)
+
+sudo reboot pour redémarrer la machine
+
+brew install cmatrix homebrew installe
+lancer cmatrix 
+
+Mettre à jour son gestionnaire de paquets brew update
+Mettre à jour ses différents logiciels brew upgrade
+brew install --cask google-chrome pour installer google 
+redémarrer sudo reboot 
+pour éteindre, se connecter au su compte "root" ensuite ``/sbin/shutdown 
+-r now''. 
+
+JOB 4
+
+rmdir plateformes crée le groupe 
+
+pour changer le propriétaire sudo chown User1 droit.txt
+ls -la pour vérifier
+
+Changer les droits du fichier “droits.txt” pour que “User2” ai accès 
+seulement en
+lecture sudo chmod u=r droit.txt
+
+Changer les droits du fichier “groupes.txt” pour que les utilisateurs 
+puissent
+accéder au fichier en lecture uniquement sudo chmod o=r  groupes.txt
+
+Changer les droits du fichier pour que le groupe “Plateformeurs” puissent 
+y
+accéder en lecture/écriture.
+sudo chmod g=rw  plateformers
+
+
+JOB 5 
+
+Ajouter un alias qui permettra de lancer la commande “ls -la” en tapant 
+“la”
+alias la=”ls -la”
+
+Ajouter un alias qui permettra de lancer la commande “apt-get update” en 
+tapant
+“update”
+alias update=”apt-get update”
+
+Ajouter un alias qui permettra de lancer la commande “apt-get upgrade” en
+tapant “upgrade”
+alias upgrade=”apt-get upgrade”
+
+Ajouter une variable d’environnement qui se nommera “USER” et qui sera 
+égale à
+votre nom d’utilisateur
+export USER=warda
+
+Mettre à jour les modifications de votre bashrc dans votre shell actuel
+ source ~/.zshrc
+
+Afficher les variables d’environnement
+printenv
+
+Ajouter à votre Path le chemin "/home/'votre utilisateur'/Bureau"
+export PATH=$PATH:/home/warda/bureau
+
+
+
+JOB 6
+
+Une fois enregistré était déjà en pdf Céline m'a dit que c’était ok que je 
+pouvais continuer.
+
+
+JOB 7
+
+echo "je suis votre fichier texte" > une_commande.txt  && wc -l 
+sources.list && echo “26 sources.txt” > nb_lignes.txt && cat sources.list 
+&& cat "sources.list" > "save_sources" && grep -rnw . -e alias
+
